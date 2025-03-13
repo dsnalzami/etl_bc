@@ -1,0 +1,26 @@
+[2025-03-13T06:56:10.014+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_csv_to_sqlite.extract_task scheduled__2025-03-12T00:00:00+00:00 [queued]>
+[2025-03-13T06:56:10.023+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_csv_to_sqlite.extract_task scheduled__2025-03-12T00:00:00+00:00 [queued]>
+[2025-03-13T06:56:10.024+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-03-13T06:56:10.038+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): extract_task> on 2025-03-12 00:00:00+00:00
+[2025-03-13T06:56:10.043+0000] {standard_task_runner.py:60} INFO - Started process 212 to run task
+[2025-03-13T06:56:10.046+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_csv_to_sqlite', 'extract_task', 'scheduled__2025-03-12T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/etl_csv_to_sqlite.py', '--cfg-path', '/tmp/tmpvcepou5b']
+[2025-03-13T06:56:10.048+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask extract_task
+[2025-03-13T06:56:10.096+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_csv_to_sqlite.extract_task scheduled__2025-03-12T00:00:00+00:00 [running]> on host d11d888054d7
+[2025-03-13T06:56:10.167+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_csv_to_sqlite' AIRFLOW_CTX_TASK_ID='extract_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-03-12T00:00:00+00:00'
+[2025-03-13T06:56:10.207+0000] {python.py:201} INFO - Done. Returned value was: Data extracted successfully from /opt/***/data/sample_data.csv
+[2025-03-13T06:56:10.353+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=etl_csv_to_sqlite, task_id=extract_task, execution_date=20250312T000000, start_date=20250313T065610, end_date=20250313T065610
+[2025-03-13T06:56:10.379+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-13T06:56:10.401+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-13T08:36:23.320+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_csv_to_sqlite.extract_task scheduled__2025-03-12T00:00:00+00:00 [queued]>
+[2025-03-13T08:36:23.326+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_csv_to_sqlite.extract_task scheduled__2025-03-12T00:00:00+00:00 [queued]>
+[2025-03-13T08:36:23.327+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-03-13T08:36:23.336+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): extract_task> on 2025-03-12 00:00:00+00:00
+[2025-03-13T08:36:23.340+0000] {standard_task_runner.py:60} INFO - Started process 358 to run task
+[2025-03-13T08:36:23.342+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_csv_to_sqlite', 'extract_task', 'scheduled__2025-03-12T00:00:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/etl_csv_to_sqlite.py', '--cfg-path', '/tmp/tmpg962p17q']
+[2025-03-13T08:36:23.343+0000] {standard_task_runner.py:88} INFO - Job 10: Subtask extract_task
+[2025-03-13T08:36:23.376+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_csv_to_sqlite.extract_task scheduled__2025-03-12T00:00:00+00:00 [running]> on host 029b78518459
+[2025-03-13T08:36:23.536+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_csv_to_sqlite' AIRFLOW_CTX_TASK_ID='extract_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-03-12T00:00:00+00:00'
+[2025-03-13T08:36:23.557+0000] {python.py:201} INFO - Done. Returned value was: Data extracted successfully from /opt/***/data/sample_data.csv
+[2025-03-13T08:36:23.570+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=etl_csv_to_sqlite, task_id=extract_task, execution_date=20250312T000000, start_date=20250313T083623, end_date=20250313T083623
+[2025-03-13T08:36:23.595+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-13T08:36:23.615+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

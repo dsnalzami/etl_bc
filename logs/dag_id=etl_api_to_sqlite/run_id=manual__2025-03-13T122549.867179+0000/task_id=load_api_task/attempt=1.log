@@ -1,0 +1,13 @@
+[2025-03-13T12:25:53.314+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_api_to_sqlite.load_api_task manual__2025-03-13T12:25:49.867179+00:00 [queued]>
+[2025-03-13T12:25:53.322+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_api_to_sqlite.load_api_task manual__2025-03-13T12:25:49.867179+00:00 [queued]>
+[2025-03-13T12:25:53.323+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-03-13T12:25:53.334+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): load_api_task> on 2025-03-13 12:25:49.867179+00:00
+[2025-03-13T12:25:53.338+0000] {standard_task_runner.py:60} INFO - Started process 290 to run task
+[2025-03-13T12:25:53.340+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_api_to_sqlite', 'load_api_task', 'manual__2025-03-13T12:25:49.867179+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/etl_api_to_sqlite.py', '--cfg-path', '/tmp/tmpr57fb9l2']
+[2025-03-13T12:25:53.342+0000] {standard_task_runner.py:88} INFO - Job 21: Subtask load_api_task
+[2025-03-13T12:25:53.376+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_api_to_sqlite.load_api_task manual__2025-03-13T12:25:49.867179+00:00 [running]> on host 029b78518459
+[2025-03-13T12:25:53.432+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_api_to_sqlite' AIRFLOW_CTX_TASK_ID='load_api_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-13T12:25:49.867179+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-13T12:25:49.867179+00:00'
+[2025-03-13T12:25:53.622+0000] {python.py:201} INFO - Done. Returned value was: API data loaded successfully to SQLite. 70 records inserted in /opt/***/data/etl_database.db
+[2025-03-13T12:25:53.639+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=etl_api_to_sqlite, task_id=load_api_task, execution_date=20250313T122549, start_date=20250313T122553, end_date=20250313T122553
+[2025-03-13T12:25:53.674+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-13T12:25:53.686+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
